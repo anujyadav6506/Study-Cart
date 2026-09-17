@@ -1,0 +1,1239 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #f1f5f9;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    width: 100%;
+    min-height: 3rem;
+}
+
+.stage1 {
+    width: calc(100% - 4rem);
+    min-height: 3rem;
+
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+
+    background-color: white;
+}
+
+
+/* Small icon */
+
+.stage1icon {
+    background-image: url("studycarticon.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    height: 2.5rem;
+    width: 2.5rem;
+
+    margin-top: 3px;
+    margin-left: 2px;
+
+    flex-shrink: 0;
+}
+
+
+/* StudyCart logo */
+
+.logo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-color: white;
+
+    width: 6rem;
+    height: 3rem;
+
+    margin-left: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+    font-weight: 550;
+
+    flex-shrink: 0;
+}
+
+
+/* Navigation */
+
+.home {
+    background-color: white;
+
+    width: 4rem;
+    height: 3rem;
+
+    margin-left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+.home:hover {
+    color: red;
+    border-bottom: 2px solid black;
+    font-weight: 550;
+    transition: ease-out;
+}
+
+
+.subjects {
+    background-color: white;
+
+    width: 5rem;
+    height: 3rem;
+
+    margin-left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+.subjects:hover {
+    color: red;
+    border-bottom: 2px solid black;
+    font-weight: 550;
+    transition: ease-out;
+}
+
+
+.pyqs {
+    background-color: white;
+
+    width: 4rem;
+    height: 3rem;
+
+    margin-left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+.pyqs:hover {
+    color: red;
+    border-bottom: 2px solid black;
+    font-weight: 550;
+    transition: ease-out;
+}
+
+
+.importantque {
+    background-color: white;
+
+    width: 10rem;
+    height: 3rem;
+
+    margin-left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+.importantque:hover {
+    color: red;
+    border-bottom: 2px solid black;
+    font-weight: 550;
+    transition: ease-out;
+}
+
+
+.about {
+    background-color: white;
+
+    width: 4rem;
+    height: 3rem;
+
+    margin-left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+.about:hover {
+    color: red;
+    border-bottom: 2px solid black;
+    font-weight: 550;
+    transition: ease-out;
+}
+
+
+/* Search bar */
+
+.searchbar {
+    background-color: white;
+
+    height: 3rem;
+
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+    flex-shrink: 1;
+}
+
+.searchbarinput {
+    width: min(25rem, 25vw);
+    min-width: 160px;
+
+    height: 1.7rem;
+
+    border: 1.5px solid black;
+    border-right: none;
+
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+    padding-left: 0.7rem;
+
+    outline: none;
+}
+
+.stage1button {
+    height: 1.7rem;
+
+    border: 1.5px solid black;
+    border-left: none;
+
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+
+/* Profile */
+
+.profile {
+    background-color: white;
+
+    margin-left: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   STAGE 2 - HERO
+========================= */
+
+.stage2content {
+    position: relative;
+
+    width: 92%;
+    min-height: 14.5rem;
+
+    background-color: #dbeafe;
+
+    margin: 1.3rem auto 1.5rem;
+
+    border-radius: 10px;
+
+    padding: 1px;
+
+    overflow: hidden;
+}
+
+
+/* First small heading */
+
+.stage2note1 {
+    height: 1.4rem;
+    width: 10rem;
+
+    color: blue;
+
+    margin-top: 1rem;
+    margin-left: 1.3rem;
+
+    background-color: rgb(182, 210, 244);
+
+    border-radius: 7px;
+
+    font-size: 14px;
+    font-weight: 550;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Main StudyCart logo */
+
+.logostage2 {
+    position: absolute;
+
+    background-image: url("studycartnewlogo.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    right: 21%;
+    top: 15px;
+
+    height: 200px;
+    width: 200px;
+
+    border-radius: 10px;
+
+    z-index: 1;
+}
+
+
+/* Side logo */
+
+.sideoflogo {
+    position: absolute;
+
+    background-image: url("sideoflogo.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    right: 7%;
+    top: 0;
+
+    height: 230px;
+    width: 200px;
+
+    border-radius: 10px;
+
+    z-index: 1;
+}
+
+
+/* Hero heading */
+
+.stage2note2 {
+    width: 14rem;
+
+    margin-top: 0.5rem;
+    margin-left: 1.3rem;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    background-color: #dbeafe;
+}
+
+
+.stage2note3 {
+    width: 13rem;
+
+    margin-top: 0.5rem;
+    margin-left: 1.3rem;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    background-color: #dbeafe;
+}
+
+
+.stage2note4 {
+    width: min(26rem, 55%);
+
+    margin-top: 0.5rem;
+    margin-left: 1.3rem;
+
+    background-color: #dbeafe;
+}
+
+
+.stage2note5 {
+    width: min(40rem, 70%);
+
+    margin-top: 1rem;
+    margin-left: 1.1rem;
+
+    display: flex;
+
+    background-color: #dbeafe;
+}
+
+
+.stage2note5part1 {
+    font-size: 14px;
+    font-weight: 550;
+
+    background-color: #dbeafe;
+}
+
+
+.stage2note5part2 {
+    margin-left: 1.2rem;
+
+    font-size: 14px;
+    font-weight: 550;
+
+    background-color: #dbeafe;
+}
+
+
+.stage2note5part3 {
+    margin-left: 1.2rem;
+
+    font-size: 14px;
+    font-weight: 550;
+
+    background-color: #dbeafe;
+}
+
+
+/* Explore subjects button */
+
+.stage2note6 {
+    height: 2rem;
+    width: 10rem;
+
+    color: white;
+
+    margin-top: 1rem;
+    margin-left: 1.3rem;
+
+    background-color: #2563eb;
+
+    border-radius: 7px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.rightarrow {
+    margin-left: 5px;
+}
+
+.fa-solid {
+    background-color: transparent;
+}
+
+
+/* =========================
+   STAGE 3
+========================= */
+
+.stage3 {
+    width: 88%;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 2rem;
+}
+
+
+/* Common card styling */
+
+.stage3lecture,
+.stage3pyqs,
+.stage3imp,
+.stage3add {
+    width: 100%;
+    height: 135px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    border: 2px solid #bfdbfe;
+}
+
+
+/* Lecture card */
+
+.lecturelogo {
+    height: fit-content;
+    width: fit-content;
+
+    margin-left: 20px;
+    padding-top: 10px;
+
+    background-color: white;
+}
+
+.lecturenotes {
+    margin-top: 10px;
+
+    font-size: 18px;
+    font-weight: 550;
+
+    margin-left: 20px;
+
+    background-color: white;
+}
+
+.addlec1 {
+    margin-top: 5px;
+
+    font-size: 15px;
+
+    margin-left: 20px;
+
+    background-color: white;
+}
+
+.addlec2 {
+    margin-top: 2px;
+
+    font-size: 15px;
+
+    margin-left: 20px;
+
+    background-color: white;
+}
+
+
+/* PYQ card */
+
+.pyqlogo {
+    height: fit-content;
+    width: fit-content;
+
+    margin-left: 20px;
+    padding-top: 10px;
+
+    background-color: white;
+}
+
+.pyqstage3 {
+    margin-top: 10px;
+
+    font-size: 18px;
+    font-weight: 550;
+
+    margin-left: 20px;
+
+    background-color: white;
+}
+
+.addpyq1 {
+    margin-top: 5px;
+
+    font-size: 15px;
+
+    margin-left: 20px;
+
+    background-color: white;
+}
+
+.addpyq2 {
+    margin-top: 2px;
+
+    font-size: 15px;
+
+    margin-left: 20px;
+
+    background-color: white;
+}
+
+
+/* Important Questions card */
+
+.implogo {
+    height: fit-content;
+    width: fit-content;
+
+    margin-left: 20px;
+    padding-top: 10px;
+
+    background-color: white;
+}
+
+.impstage3 {
+    margin-top: 10px;
+
+    font-size: 18px;
+    font-weight: 550;
+
+    margin-left: 20px;
+
+    background-color: white;
+}
+
+.addimp1 {
+    margin-top: 5px;
+
+    font-size: 15px;
+
+    margin-left: 20px;
+
+    background-color: white;
+}
+
+.addimp2 {
+    margin-top: 2px;
+
+    font-size: 15px;
+
+    margin-left: 20px;
+
+    background-color: white;
+}
+
+
+/* Add card */
+
+.addlogo {
+    height: fit-content;
+    width: fit-content;
+
+    margin-left: 20px;
+    padding-top: 10px;
+
+    background-color: white;
+}
+
+.addstage3 {
+    margin-top: 10px;
+
+    font-size: 18px;
+    font-weight: 550;
+
+    background-color: white;
+
+    margin-left: 20px;
+}
+
+.addadd1 {
+    margin-top: 5px;
+
+    font-size: 15px;
+
+    margin-left: 20px;
+
+    background-color: white;
+}
+
+.addadd2 {
+    margin-top: 2px;
+
+    font-size: 15px;
+
+    margin-left: 20px;
+
+    background-color: white;
+}
+
+
+/* =========================
+   STAGE 4
+========================= */
+
+.stage4 {
+    width: 82%;
+
+    min-height: 14rem;
+
+    background-color: white;
+
+    margin: 2rem auto 0;
+
+    padding: 0 1rem 1rem;
+
+    border-radius: 10px;
+
+    border: 2px solid #bfdbfe;
+}
+
+
+/* Stage 4 heading */
+
+.stage4line1 {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    margin-bottom: 0.5rem;
+}
+
+.stage4sub {
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+
+    font-size: 20px;
+    font-weight: 550;
+
+    background-color: white;
+}
+
+.stage4view {
+    display: flex;
+
+    font-size: 17px;
+
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+
+    color: rgb(65, 65, 194);
+
+    cursor: pointer;
+
+    background-color: white;
+}
+
+
+/* Year cards */
+
+.stage4content {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 1.5rem;
+
+    background-color: white;
+}
+
+
+.stage4content1 {
+    height: 160px;
+    width: 100%;
+
+    background-color: #ede9fe;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+    border: 1px solid #bfdbfe;
+    cursor: pointer;
+}
+
+
+.firstyear {
+    background-image: url("firstyear.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    height: 120px;
+    width: 160px;
+
+    border-radius: 10px;
+
+}
+
+
+.stage4content2 {
+    height: 160px;
+    width: 100%;
+
+    background-color: #dbeafe;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+    border: 1px solid #bfdbfe;
+    cursor: pointer;
+}
+
+
+.secondyear {
+    background-image: url("secondyear.jpg");
+    background-size: cover;
+    background-position: center;
+
+    height: 120px;
+    width: 160px;
+
+    border-radius: 10px;
+
+}
+
+
+.stage4content3 {
+    height: 160px;
+    width: 100%;
+
+    background-color: rgb(216, 216, 244);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+    border: 1px solid #bfdbfe;
+    cursor: pointer;
+}
+
+
+.thirdyear {
+    background-image: url("thirdyear.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    height: 120px;
+    width: 160px;
+
+    border-radius: 10px;
+}
+
+
+.stage4content4 {
+    height: 160px;
+    width: 100%;
+
+    background-color: #d1fae5;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+    border: 1px solid #bfdbfe;
+    cursor: pointer;
+}
+
+
+.fourthyear {
+    background-image: url("fourthyear.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    height: 120px;
+    width: 160px;
+
+    border-radius: 10px;
+
+}
+
+
+/* =========================
+   RESPONSIVE - TABLET
+========================= */
+
+@media (max-width: 1100px) {
+
+    .stage1 {
+        gap: 0.5rem;
+    }
+
+    .logo {
+        margin-left: 0.2rem;
+    }
+
+    .home,
+    .subjects,
+    .pyqs,
+    .importantque,
+    .about {
+        font-size: 14px;
+    }
+
+    .searchbarinput {
+        width: 180px;
+        min-width: 120px;
+    }
+
+    .logostage2 {
+        right: 22%;
+        width: 170px;
+        height: 170px;
+    }
+
+    .sideoflogo {
+        width: 170px;
+        height: 195px;
+    }
+
+    .stage3 {
+        width: 90%;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stage4 {
+        width: 90%;
+    }
+
+    .stage4content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================
+   RESPONSIVE - SMALL TABLET
+========================= */
+
+@media (max-width: 800px) {
+
+    .stage1 {
+        flex-wrap: wrap;
+
+        height: auto;
+
+        padding: 0.5rem 0;
+    }
+
+    .searchbar {
+        width: 100%;
+
+        margin-left: 0;
+
+        order: 10;
+
+        justify-content: center;
+    }
+
+    .searchbarinput {
+        width: 80%;
+    }
+
+    .stage2content {
+        width: 94%;
+
+        min-height: 20rem;
+    }
+
+    .logostage2 {
+        right: 12%;
+
+        width: 150px;
+        height: 150px;
+    }
+
+    .sideoflogo {
+        display: none;
+    }
+
+    .stage2note4 {
+        width: 60%;
+    }
+
+    .stage2note5 {
+        width: 65%;
+    }
+
+    .stage3 {
+        width: 92%;
+
+        gap: 1rem;
+    }
+
+    .stage4 {
+        width: 92%;
+    }
+}
+
+
+/* =========================
+   RESPONSIVE - MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .stage1 {
+        width: 100%;
+
+        margin-left: 0;
+        margin-right: 0;
+
+        padding: 0.8rem;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 0.4rem;
+    }
+
+    .stage1icon {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .home,
+    .subjects,
+    .pyqs,
+    .importantque,
+    .about {
+        width: auto;
+
+        height: auto;
+
+        margin: 0.2rem;
+
+        padding: 0.3rem 1rem;
+    }
+
+    .searchbar {
+        width: 100%;
+
+        margin-top: 0.5rem;
+
+        flex-direction: row;
+    }
+
+    .searchbarinput {
+        width: 100%;
+    }
+
+    .profile {
+        margin-left: 0;
+    }
+
+
+    /* Hero */
+
+    .stage2content {
+        width: 94%;
+
+        min-height: 31rem;
+
+        padding-bottom: 1rem;
+    }
+
+    .logostage2 {
+        position: relative;
+
+        top: auto;
+        right: auto;
+
+        width: 140px;
+        height: 140px;
+
+        margin: 1rem auto;
+
+        display: block;
+    }
+
+    .stage2note1,
+    .stage2note2,
+    .stage2note3,
+    .stage2note4,
+    .stage2note5,
+    .stage2note6 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .stage2note4 {
+        width: 90%;
+    }
+
+    .stage2note5 {
+        width: 90%;
+
+        flex-direction: column;
+    }
+
+    .stage2note5part2,
+    .stage2note5part3 {
+        margin-left: 0;
+        margin-top: 0.3rem;
+    }
+
+
+    /* Stage 3 */
+
+    .stage3 {
+        width: 90%;
+
+        grid-template-columns: 1fr;
+
+        gap: 1rem;
+    }
+
+    .stage3lecture,
+    .stage3pyqs,
+    .stage3imp,
+    .stage3add {
+        height: 135px;
+    }
+
+
+    /* Stage 4 */
+
+    .stage4 {
+        width: 90%;
+
+        min-height: auto;
+    }
+
+    .stage4line1 {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 0.2rem;
+    }
+
+    .stage4view {
+        margin-top: 0;
+
+        margin-left: 0.5rem;
+    }
+
+    .stage4content {
+        grid-template-columns: 1fr;
+
+        gap: 1rem;
+    }
+
+    .stage4content1,
+    .stage4content2,
+    .stage4content3,
+    .stage4content4 {
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   VERY SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .stage2content {
+        min-height: 33rem;
+    }
+
+    .stage2note2,
+    .stage2note3 {
+        font-size: 18px;
+    }
+
+    .stage2note5 {
+        font-size: 13px;
+    }
+
+    .stage3 {
+        width: 94%;
+    }
+
+    .stage4 {
+        width: 94%;
+    }
+
+    .firstyear,
+    .secondyear,
+    .thirdyear,
+    .fourthyear {
+        width: 150px;
+    }
+}
+.stage3lecture:hover,
+.stage3pyqs:hover,
+.stage3imp:hover,
+.stage3add:hover,
+.stage4content1:hover,.stage4content2:hover,.stage4content3:hover,.stage4content4:hover,.stage4view:hover
+ {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.stage3lecture,
+.stage3pyqs,
+.stage3imp,
+.stage3add,
+.stage4content1,.stage4content2,.stage4content3,.stage4content4 ,.stage4view{
+    transition: 0.2s ease;
+}
