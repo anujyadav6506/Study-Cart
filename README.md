@@ -1,2 +1,2 @@
 # Study-Cart
-Author  - Anuj Yadav hai
+Author  - Anuj Yadav 
